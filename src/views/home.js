@@ -9,7 +9,7 @@ export const Home = () => {
   div.appendChild(header);
 
   const subtitle = document.createElement ("h2")
-  subtitle.innerHTML = "bienvenido a dreamland, una página para fanaticos de Disney y Pixar donde puedes chatear con tus películas favoritas";
+  subtitle.innerHTML = "Bienvenido a dreamland, una página para fanaticos de Disney y Pixar donde puedes chatear con tus películas favoritas";
   div.appendChild(subtitle);
 
   

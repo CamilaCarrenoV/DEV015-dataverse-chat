@@ -26,8 +26,7 @@ export const card = (item) => {
     `;
     
   ( liElement.addEventListener('click', () => { 
-    console.log(item.id)
-        navigateTo('/peliculas', {id: item.id});
+        navigateTo('/pelicula', {id: item.id});
     }));
     return liElement;
 };
