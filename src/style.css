@@ -2,24 +2,43 @@
     font-family: fuenteDisney;
     src: url(./assets/DisneyFont.ttf);
   }
-  
+
+  html, body {
+    margin: 0;
+  }
+
+  header {
+    background-color: #282F61;
+    padding: 10px 0;
+  }
+.title {
+display: flex;
+}
+
+.logo {
+  height: 100px;
+  width: auto;
+  margin-left: 32px;
+  margin-right: 50px;
+}
+
   h1 {
     font-family: fuenteDisney, sans-serif;
     font-style: normal;
-    font-size: 140px;
+    font-size: 90px;
     text-align: center;
     color: #ffffff;
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
-  
+
   body {
     background: rgb(0,78,203);
     background: linear-gradient(180deg, rgba(0,78,203,1) 0%, rgba(0,78,203,1) 50%, rgba(166,224,247,1) 100%);
     font-family: "InspireTWDC", sans-serif;
-   
+
   }
-  
+
   h2 {
     font-family: "InspireTWDC", sans-serif;
     font-weight: bold;
@@ -27,10 +46,9 @@
     font-size: 20px;
     text-align: center;
     color:black;
-    background-color: #ac95ffd3;
     padding: 25px;
   }
-  
+
   h3 {
     font-family: "InspireTWDC", sans-serif;
     text-align: center;
@@ -38,8 +56,8 @@
     font-size: 25px;
     margin-top: 0;
   }
-  
-  .botonDatos {
+
+  /*.botonDatos {
     cursor:pointer;
     position:relative;
     padding:10px 20px;
@@ -74,29 +92,29 @@
       // background:rgba(0,0,0,.5);
       // color:white;
       &:before,&:after{
-        
+
         width:100%;
         height:100%;
         // border-color:white;
       }
     }
-  }
-  
+  }*/
+
   .contenido-oculto{
     display: none;
-  
+
   }
-  
+
   #datosestadisticos {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 600px; 
-    margin: 0 auto; 
+    max-width: 600px;
+    margin: 0 auto;
     padding: 20px;
   }
-  
+
   .datosdisney {
     list-style-type: none;
     padding: 16px;
@@ -110,9 +128,9 @@
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
+
   .datosdisney li {
-    flex: 1; 
+    flex: 1;
     padding: 10px;
     text-align: center;
     border: 1px solid #ccc;
@@ -121,7 +139,7 @@
     width: 400px;
     height: 64px;
   }
-  
+
   .datosdisney li#duracion {
     background-color: #fcf0c6;
     color:#000;
@@ -129,7 +147,7 @@
     align-items: center;
     font-weight: bold;
   }
-  
+
   .datosdisney li#nota {
     background-color: #fcf0c6;
     color: #000;
@@ -146,7 +164,7 @@
       align-items: center;
       gap: 10px;
   }
-  
+
   select {
     font-family: "InspireTWDC", sans-serif;
     font-size: 100%;
@@ -160,7 +178,7 @@
     cursor: pointer;
     border-radius: 20px;
   }
-  
+
   option {
     font-size: 100%;
     color: black;
@@ -173,8 +191,8 @@
     cursor: pointer;
     border-radius: 20px;
   }
-  
-  button {
+
+  /*button {
     font-family: "InspireTWDC", sans-serif;
     font-weight: bold;
     font-size: 100%;
@@ -186,8 +204,8 @@
     border-width: 3px;
     border-radius: 20px;
     cursor: pointer;
-  }
-  
+  }*/
+
   .ulPelis {
     display: flex;
     flex-wrap: wrap;
@@ -197,34 +215,37 @@
     margin: 0;
     margin-top: 16px;
     justify-content: center;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
-  
+
   .contenedorContenido {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
   }
-  
+
   .contenedorImagen {
     display: flex;
     justify-content: center;
-    
+
   }
-  
+
   .contenedorTextos {
     display: flex;
     flex-direction: column;
     padding: 0 16px;
     font-size: 110%;
   }
-  
+
   .imagenPeli {
     height: 240px;
      width: auto;
   }
-  
+
   .tarjeta {
-    font-family: "InspireTWDC", cursiva;
+    font-family: "InspireTWDC", sans-serif;
     display: flex;
     flex-direction: column;
     background-color: rgba(255, 255, 255, 0.9);
@@ -236,20 +257,68 @@
     border-radius: 20px;
     color: black;
     }
-  
+
   footer {
     background-color: rgba(255, 255, 255, 0.5);
     color: #000;
     margin-top: 10px;
-    margin-bottom: 10px;
     padding: 2%;
     text-align: center;
+    font-family:"InspireTWDC", sans-serif;
   }
-  
+
    #root{
-      margin-top: 32px;
       margin-bottom: 64px;
-      max-width: 1400px;
       margin-left: auto;
       margin-right: auto;
     }
+
+    .movieContent {
+      margin-top: 50px;
+      background-color: #ffffff;
+      font-family: "InspireTWDC", sans-serif;
+      text-align: justify;
+      padding: 1rem;
+      border-radius: 20px;
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .tittleMovie {
+      font-family: "InspireTWDC", sans-serif;
+      font-style: normal;
+      font-size: 200%;
+      color:#000;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .imagenText {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      margin-bottom: 16px;
+    }
+
+    .imagenMovie {
+      display: flex;
+      justify-content: center;
+    }
+
+    .posterMovie {
+    height: 400px;
+    width: auto;
+    }
+
+    .infoContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0 16px;
+    font-size: 110%;
+    }
+
+    .textInfo {
+      margin-bottom: 16px;
+    }
+
