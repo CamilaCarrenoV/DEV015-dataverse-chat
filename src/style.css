@@ -322,3 +322,11 @@ display: flex;
       margin-bottom: 16px;
     }
 
+    .loginApi {
+      justify-content: right;
+      align-self: center;
+      margin-left: auto;
+      margin-right: 32px;
+    }
+
+
