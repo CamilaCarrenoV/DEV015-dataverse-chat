@@ -1,7 +1,6 @@
-
-export const createHeader = ()=> {
-    const header = document.createElement('header');
-    header.innerHTML = `
+export const createHeader = () => {
+  const header = document.createElement("header");
+  header.innerHTML = `
     <div class="title">
     <img class="logo" src="images/logo.png" alt="logo">
     <h1> Dreamland </h1>
@@ -10,7 +9,7 @@ export const createHeader = ()=> {
         <button id="buttonApiKey" class="login-button">Ingresar</button>
     </div>
     </div>
-    `
+    `;
 
-    return header;
-}
+  return header;
+};

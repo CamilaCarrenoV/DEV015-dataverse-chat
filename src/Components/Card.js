@@ -1,13 +1,13 @@
 import { navigateTo } from "../router.js";
 
 export const card = (item) => {
-  const liElement = document.createElement('li');
-    liElement.classList.add("tarjeta");
-    liElement.setAttribute("itemscope","");
-    liElement.setAttribute("itemtype", "");
-    liElement.setAttribute("data-id", item.id);
+  const liElement = document.createElement("li");
+  liElement.classList.add("tarjeta");
+  liElement.setAttribute("itemscope", "");
+  liElement.setAttribute("itemtype", "");
+  liElement.setAttribute("data-id", item.id);
 
-    liElement.innerHTML = `
+  liElement.innerHTML = `
     <div>
       <div class="tituloPeli"><h3 itemprop="name"> ${item.name} </h3> </div>
       <div class="contenedorContenido">
@@ -24,10 +24,9 @@ export const card = (item) => {
       </div>
     </div>
     `;
-    
-  ( liElement.addEventListener('click', () => { 
-        navigateTo('/pelicula', {id: item.id});
-    }));
-    return liElement;
-};
 
+  liElement.addEventListener("click", () => {
+    navigateTo("/pelicula", { id: item.id });
+  });
+  return liElement;
+};

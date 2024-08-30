@@ -1,8 +1,8 @@
 export const cardMovie = (item) => {
-    const divElement = document.createElement('div');
-    divElement.classList.add("infoMovie");
+  const divElement = document.createElement("div");
+  divElement.classList.add("infoMovie");
 
-    divElement.innerHTML = `
+  divElement.innerHTML = `
     <div class= movieContent>
     <h1 class="tittleMovie"> ${item.name} </h1>
     <div class=imagenText>
@@ -22,5 +22,5 @@ export const cardMovie = (item) => {
     </div>
     `;
 
-    return divElement;
-}
+  return divElement;
+};
