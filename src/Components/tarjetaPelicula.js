@@ -20,7 +20,15 @@ export const cardMovie = (item) => {
       </div>
       </div>
     </div>
-    `;
+
+    <div id="chatContainer">
+      <div id="messages"></div>
+      <div id="input-container">
+       <textarea id="chatInput" placeholder="Escribe un mensaje..."></textarea>
+       <button id="sendButton">Enviar</button>
+     </div>
+    </div>;
+    `
 
   return divElement;
 };
