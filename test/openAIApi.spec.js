@@ -46,7 +46,7 @@ describe('communicateWithOpenAI', () => {
       communicateWithOpenAI.mockRejectedValue(mockError);
 
       const message = "Hola, ¿cómo estás?";
-      const movieName = "Inception";
+      const movieName = "Las locuras del emperador";
 
       await expect(communicateWithOpenAI(message, movieName)).rejects.toThrow('API is down');
     });
