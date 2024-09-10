@@ -9,7 +9,7 @@ export const Home = () => {
   div.appendChild(header);
 
   const subtitle = document.createElement ("h2")
-  subtitle.innerHTML = "¡Bienvenidos fans de Disney y Pixar! Explora nuestro mágico contenido y has tu sueño realidad chatando con tu película favorita";
+  subtitle.innerHTML = "¡Bienvenidos fans de Disney y Pixar! Explora nuestro mágico contenido, dale click a tu película favorita y has tu sueño realidad chatando con ella";
   div.appendChild(subtitle);
 
   

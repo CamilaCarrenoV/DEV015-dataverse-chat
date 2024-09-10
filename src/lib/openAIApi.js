@@ -10,7 +10,7 @@ export const communicateWithOpenAI = async (message, movieName) => {
         'Authorization': `Bearer ${apiKey}` // Autorización con API key
       },
       body: JSON.stringify({
-        model: "gpt-4o", // Modelo que deseas usar, puede ser text-davinci-003 o GPT-4, etc.
+        model: "gpt-4o", 
         messages: [
           {
             role: "system",
@@ -25,12 +25,6 @@ export const communicateWithOpenAI = async (message, movieName) => {
       })
     });
 
-    // if (!respuesta.ok) { // Verifica si la respuesta es exitosa
-    //   throw new Error(`Error en la solicitud: ${respuesta.status}`);
-    // }
-
-    // const datos = await respuesta.json(); // Convierte la respuesta en JSON
-    // console.log(datos.choices[0].text); // Muestra la respuesta generada por OpenAI 
     const json = await respuesta.json()
     return(json);
   } catch (error) {

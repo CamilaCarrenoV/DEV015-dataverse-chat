@@ -1,7 +1,7 @@
 import {
   filterData,
   sortData,
-  computeStats,
+  // computeStats,
 } from "../src/lib/dataFunctions.js";
 import { data as fakeData } from "../test/data.js";
 
